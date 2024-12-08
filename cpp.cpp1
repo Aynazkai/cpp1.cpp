@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+class Calculator {
+public:
+    int floor(double num) {
+        int result = num;
+        return result;
+    }
+
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double max1(double a, double b) {
+        if (a > b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+
+    bool find1(string str, char c) {
+        for (int i = 0; i < str.length(); i++) {
+            if (str[i] == c) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    int max2(int arr[], int count) {
+        int max = arr[0];
+        for (int i = 1; i < count; ++i) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        return max;
+    }
+};
